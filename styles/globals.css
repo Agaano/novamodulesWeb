@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  width: inherit;
+  height: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  transition-duration: 0.2s;
+  color: #80c1ff;
+}
+
+:root {
+  --div-background-color: rgba(0,0,0,0.1); 
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(28,28,28);
+  background: linear-gradient(90deg, #1c1c1c 49%, #000db5 73%, #000000 100%);
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -4; /* чтобы затемнение было под контентом */
+}
+
+ul {
+  display: flex;
+  column-gap: 50px;
+  list-style: none;
+}
+
+.info ul {
+  column-gap: 25px;
+}
+
+footer {
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  margin-top: 150px;
+  height: 200px;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  margin-bottom: 50px;
+  border: 1px solid;
+  border-image: linear-gradient(to right top, white, #3443fe, white);
+  border-image-slice: 1;
+}
+
+h1 {
+  user-select: none;
+}
+
+colortext {
+  animation: flow 15s ease-in-out infinite;
+  background: linear-gradient(-90deg,#3443fe,#0082ff,#80c1ff ,#0082ff ,#3443fe);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+input:autofill {
+  mix-blend-mode: overlay;
+}
+

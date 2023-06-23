@@ -1,0 +1,20 @@
+{
+  "name": "site2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "script": "npx next script.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.15.0",
+    "js-cookie": "^3.0.5",
+    "next": "13.4.4",
+    "prisma": "^4.15.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
